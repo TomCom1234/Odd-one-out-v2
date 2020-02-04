@@ -43,7 +43,7 @@ class RevealScreenP3 extends StatelessWidget {
                       width: 400,
                       height: 400,
                       child: Text(
-                        "Person 3", //could be "name1" from a list of names gathered by the input screen
+                        InputScreen.nameInput3.text, //could be "name1" from a list of names gathered by the input screen
                         style: TextStyle(
                           fontSize: 40.0,
                           color: Colors.white,

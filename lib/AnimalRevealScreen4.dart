@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as prefix0;
 import 'package:flutter/services.dart';
 import 'package:odd_one_out/InputScreen.dart';
+import 'package:odd_one_out/Question%201.dart';
 import 'package:odd_one_out/RevealScreenP2.dart';
 import 'package:odd_one_out/RevealScreenP4.dart';
 import 'package:odd_one_out/RevealScreenP5.dart';
@@ -99,7 +100,7 @@ class AnimalRevealScreen4 extends StatelessWidget {
                                 ),
                                 onPressed: () {
                                   Navigator.push(context, MaterialPageRoute(builder: (context){
-                                    return RevealScreenP5(); //Will return the next Reveal screen but names would be random in each one
+                                    return Question1(); //Will return the next Reveal screen but names would be random in each one
                                   }));
                                 },
                                 child: Text("Next player", style: TextStyle(fontSize: 45,)),

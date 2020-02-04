@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:odd_one_out/AnimalRevealScreen.dart';
 import 'package:odd_one_out/AnimalRevealScreen4.dart';
 import 'package:odd_one_out/InputScreen.dart';
+import 'package:odd_one_out/Question%201.dart';
 import 'package:odd_one_out/RevealScreenP5.dart';
 import 'package:odd_one_out/TutorialScreen.dart';
 
@@ -43,7 +44,7 @@ class RevealScreenP4 extends StatelessWidget {
                       width: 400,
                       height: 400,
                       child: Text(
-                        "Person 4", //could be "name1" from a list of names gathered by the input screen
+                        InputScreen.nameInput4.text, //could be "name1" from a list of names gathered by the input screen
                         style: TextStyle(
                           fontSize: 40.0,
                           color: Colors.white,
@@ -108,7 +109,7 @@ class RevealScreenP4 extends StatelessWidget {
                                 ),
                                 onPressed: () {
                                   Navigator.push(context, MaterialPageRoute(builder: (context){
-                                    return RevealScreenP5(); //Will return the next Reveal screen but names would be random in each one
+                                    return Question1(); //Will return the next Reveal screen but names would be random in each one
                                   }));
                                 },
                                 child: Text("Next Person", style: TextStyle(fontSize: 45,)),

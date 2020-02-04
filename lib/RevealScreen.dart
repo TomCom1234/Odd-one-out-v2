@@ -8,7 +8,7 @@ import 'package:odd_one_out/RevealScreenP2.dart';
 import 'package:odd_one_out/TutorialScreen.dart';
 import 'package:odd_one_out/AnimalRevealScreen.dart';
 
-
+var inputScreen = new InputScreen();
 
 
  List<String> food=["Pizza","Out of the loop"];
@@ -46,7 +46,7 @@ class RevealScreen extends StatelessWidget {
                       width: 400,
                       height: 400,
                       child: Text(
-                        ("person1") , //could be "name1" from a list of names gathered by the input screen
+                        (InputScreen.nameInput1.text) , //could be "name1" from a list of names gathered by the input screen
                         style: TextStyle(
                           fontSize: 40.0,
                           color: Colors.white,

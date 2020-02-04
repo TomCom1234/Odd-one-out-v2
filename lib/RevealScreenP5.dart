@@ -108,8 +108,7 @@ class RevealScreenP5 extends StatelessWidget {
                                 ),
                                 onPressed: () {
                                   Navigator.push(context, MaterialPageRoute(builder: (context){
-                                    return RevealScreenP6(); //Will return the next Reveal screen but names would be random in each one;
-                                  }));
+                                   }));
                                 },
                                 child: Text("Next Person", style: TextStyle(fontSize: 45,)),
                               )),

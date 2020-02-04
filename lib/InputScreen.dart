@@ -14,20 +14,19 @@ class InputScreen extends StatelessWidget {
      var list = new List<TextEditingController>();
 
 
-  final TextEditingController nameInput1 = new TextEditingController();
-  final TextEditingController nameInput2 = new TextEditingController();
-  final TextEditingController nameInput3 = new TextEditingController();
-  final TextEditingController nameInput4 = new TextEditingController();
-  final TextEditingController nameInput5 = new TextEditingController();
-  final TextEditingController nameInput6 = new TextEditingController();
+   static TextEditingController nameInput1 = new TextEditingController();
+  static  TextEditingController nameInput2 = new TextEditingController();
+  static  TextEditingController nameInput3 = new TextEditingController();
+  static  TextEditingController nameInput4 = new TextEditingController();
+
 
 
   String name1;
   String name2;
   String name3;
   String name4;
-  String name5;
-  String name6;
+
+
 
 
 
@@ -48,13 +47,13 @@ class InputScreen extends StatelessWidget {
     return name1;
   }
 
+
  void saveInput(){
   list.add(nameInput1);
   list.add(nameInput2);
   list.add(nameInput3);
   list.add(nameInput4);
-  list.add(nameInput5);
-  list.add(nameInput6);
+
 
 
 }
@@ -64,8 +63,7 @@ void showNameInputted(){
   print(nameInput2);
   print(nameInput3);
   print(nameInput4);
-  print(nameInput5);
-  print(nameInput6);
+
 
 }
 
@@ -74,8 +72,6 @@ void showNameInputted(){
     nameInput2.clear();
     nameInput3.clear();
     nameInput4.clear();
-    nameInput5.clear();
-    nameInput6.clear();
   }
 
 
@@ -175,39 +171,7 @@ void showNameInputted(){
                 ),
               ),
 
-              Container(
-                margin: EdgeInsets.only(top: 30.0),
-                child: new TextFormField(
-                  controller: nameInput5,
-                  decoration: new InputDecoration(
-                      border: new OutlineInputBorder(
-                        borderRadius: const BorderRadius.all(
-                          const Radius.circular(20.0),
-                        ),
-                      ),
-                      filled: true,
-                      hintStyle: new TextStyle(color: Colors.grey[800]),
-                      hintText: "Your Name",
-                      fillColor: Colors.amber[100]),
-                ),
-              ),
 
-              Container(
-                margin: EdgeInsets.only(top: 30.0),
-                child: new TextFormField(
-                  controller: nameInput6,
-                  decoration: new InputDecoration(
-                      border: new OutlineInputBorder(
-                        borderRadius: const BorderRadius.all(
-                          const Radius.circular(20.0),
-                        ),
-                      ),
-                      filled: true,
-                      hintStyle: new TextStyle(color: Colors.grey[800]),
-                      hintText: "Your Name",
-                      fillColor: Colors.amber[100]),
-                ),
-              ),
 
               Container(
                 margin: EdgeInsets.only(top: 40.0),

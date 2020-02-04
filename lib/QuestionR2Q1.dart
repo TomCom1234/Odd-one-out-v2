@@ -54,8 +54,10 @@ class QuestionR2Q1 extends StatelessWidget {
                       width: 400,
                       height: 400,
                       child: Text(
-                        "Person 2 asks Person 3", //would randomly generate using the names from the input screen
+                        InputScreen.nameInput2.text + " asks " +  InputScreen.nameInput3.text,
+//                        "Person 2 asks Person 3", //would randomly generate using the names from the input screen
                         style: TextStyle(
+                          fontWeight: FontWeight.bold,
                           fontSize: 30.0,
                           color: Colors.white,
                         ),

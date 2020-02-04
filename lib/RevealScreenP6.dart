@@ -108,8 +108,7 @@ class RevealScreenP6 extends StatelessWidget {
                                 ),
                                 onPressed: () {
                                   Navigator.push(context, MaterialPageRoute(builder: (context){
-                                    return Question1(); //would return to the first question screen
-                                  }));
+                                   }));
                                 },
                                 child: Text("Start", style: TextStyle(fontSize: 45,)),
                               )),
